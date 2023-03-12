@@ -1,0 +1,147 @@
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .vs {
+    padding: 70px 0;
+  }
+
+  .title {
+    line-height: 30px;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -100%;
+    width: 0;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: $white;
+    transition: 0.5s;
+  }
+
+  .menu.active {
+    width: 100%;
+    left: 0;
+  }
+
+  .menu__list {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  .menu__item {
+    width: 100%;
+  }
+
+  .menu__item + .menu__item {
+    margin-left: 0px;
+  }
+
+  .menu__link {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px 0;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #b3e2e7;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+  .menu-btn {
+    display: block;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .gallery__item {
+    flex: 35%;
+  }
+
+  .footer__wrapper{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .footer__item-title {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .contact__inner {
+    flex-wrap: wrap-reverse;
+  }
+
+  .contact__left {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .contact__left::before {
+    display: none;
+  }
+
+  .contact__item {
+    width: 200px;
+  }
+
+  .contact__right {
+    width: 100%;
+  }
+
+
+  .footer__item:first-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 667px) {
+  .form__inputs {
+    flex-direction: column;
+  }
+
+  .form__input--small {
+    width: 100%;
+  }
+}
+
+@media (max-width: 525px) {
+  .hero__title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .hero__text {
+    font-size: 18px;
+  }
+
+  .gallery__item {
+    flex: 100%;
+  }
+}
