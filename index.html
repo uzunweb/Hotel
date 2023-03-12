@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation by the sea</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+   >
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body id="home">
+    <div class="preloader">
+      <span class="spinner spinner-large spinner-blue spinner-slow"></span>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <picture>
+              <source srcset="images/logo-small.png" width="70" height="50" media="(max-width: 525px)">
+              <img class="logo__img" src="images/logo.png" width="300" height="80" alt="Логотип">
+            </picture>
+          </a>
+
+          <!-- Главное меню -->
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link menu__link--active" href="#home">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#about">О курорте</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#rooms">Номера</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#spa">Спа</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#gallery">Фотогалерея</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#contact">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Главное меню -->
+
+          <!-- Кнопка бургера -->
+          <button class="menu-btn" type="button" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <!-- Кнопка бургера -->
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <h1 class="hero__title">Vacation by the sea <span>Отель и Курорт</span></h1>
+              <p class="hero__text">Сделайте свою жизнь лучше и ярче! Вы должны отправиться в путешествие с нами!</p>
+            </div>
+
+            <!-- Booking -->
+            <div class="booking" id="booking">
+              <div class="container">
+                <form class="form-book" action="#">
+                  <div class="form-book__item">
+                    <p>Заезд<span>*</span></p>
+                    <input class="form-book__input" type="date">
+                  </div>
+
+                  <div class="form-book__item">
+                    <p>Выезд<span>*</span></p>
+                    <input class="form-book__input" type="date">
+                  </div>
+
+                  <div class="form-book__item">
+                    <p>Взрослые<span>*</span></p>
+                    <select class="form-book__input" name="Взрослые">
+                      <option value="1">1 Взрослый</option>
+                      <option value="2">2 Взрослых</option>
+                      <option value="3">3 Взрослых</option>
+                      <option value="4">4 Взрослых</option>
+                      <option value="5">5 Взрослых</option>
+                      <option value="6">6 Взрослых</option>
+                    </select>
+                  </div>
+
+                  <div class="form-book__item">
+                    <p>Дети<span>*</span></p>
+                    <select class="form-book__input" name="Ребенок">
+                      <option value="1">1 Ребенок</option>
+                      <option value="2">2 Ребенка</option>
+                      <option value="3">3 Ребенка</option>
+                      <option value="4">4 Ребенка</option>
+                      <option value="5">5 Ребенка</option>
+                      <option value="6">6 Ребенка</option>
+                    </select>
+                  </div>
+
+                  <div class="form-book__item">
+                    <p>Комнаты<span>*</span></p>
+                    <select class="form-book__input" name="Коннаты">
+                      <option value="1">1 Комната</option>
+                      <option value="2">2 Комнаты</option>
+                      <option value="3">3 Комнаты</option>
+                    </select>
+                  </div>
+
+                  <a class="btn availability-btn" href="#">Поиск</a>
+                </form>
+              </div>
+            </div>
+            <!-- Booking end -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция о гостинице about -->
+      <section class="about vs" id="about">
+        <div class="container">
+          <h2 class="title about__title">О гостинице</h2>
+          <div class="about__inner">
+            <div class="about__img-box">
+              <img class="about__img" src="images/about-img.jpg" alt="Отель на Мальдивах">
+            </div>
+            <div class="about__content">
+              <p>
+                Отель <span class="about__name">Vacation by the sea</span> расположен на острове Тодду. К услугам гостей сад и бесплатный Wi-Fi. К
+                услугам гостей ресторан и доставка еды и напитков в номер. Сотрудники отеля могут организовать трансфер от/до аэропорта.
+              </p>
+              <p>В числе удобств номеров письменный стол, телевизор с плоским экраном и собственная ванная комната. В номерах установлен шкаф.</p>
+              <p>Каждое утро в отеле сервируется континентальный завтрак.</p>
+              <p>Расстояние до международного аэропорта Мале составляет 70 км.</p>
+              <p>Парам особенно нравится расположение — они оценили проживание в этом районе для поездки вдвоем на</p>
+
+              <a class="about__btn btn" href="#home">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Секция о гостинице about end -->
+
+      <!-- Секция Rooms -->
+      <section class="rooms vs" id="rooms">
+        <div class="container">
+          <h2 class="title rooms__title">Наши комнаты</h2>
+          <p class="rooms__text">Откройте для себя простор и удобства в наших современных и удобных номерах</p>
+
+          <div class="rooms__inner">
+            <div class="card">
+              <a class="card__link" href="#"></a>
+              <div class="card__img-box">
+                <img class="card__img" src="images/card/hotel-room-1.jpg" alt="" loading="lazy">
+
+                <div class="card__info-price">
+                  <h3 class="card__title">Стандартный номер</h3>
+                  <span class="card__price">150$ за ночь</span>
+                </div>
+              </div>
+
+              <div class="card__content">
+                <p class="card__text">Двухместный номер с 2 отдельными кроватями, балконом, хорошим видом и гостиным уголком.</p>
+
+                <div class="card__bottom">
+                  <ul class="card__list">
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#user"></use>
+                      </svg>
+                      <span>Для 2 человек</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#outline"></use>
+                      </svg>
+                      <span>19 кв.м</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#view"></use>
+                      </svg>
+                      <span>Вид из окна</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#wifi"></use>
+                      </svg>
+                      <span>Wi fi</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#bed"></use>
+                      </svg>
+                      <span>Кровать king size</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#wine"></use>
+                      </svg>
+                      <span>Мини бар</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#deposit"></use>
+                      </svg>
+                      <span>Сейф</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <a class="card__link" href="#"></a>
+              <div class="card__img-box">
+                <img class="card__img" src="images/card/hotel-room-2.jpg" alt="" loading="lazy">
+
+                <div class="card__info-price">
+                  <h3 class="card__title">Номер Делюкс</h3>
+                  <span class="card__price">300$ за ночь</span>
+                </div>
+              </div>
+
+              <div class="card__content">
+                <p class="card__text">
+                  Двухместный номер Delux с 1 кроватью, электрочайником, кондиционером и принадлежностями для приготовления чая и кофе.
+                </p>
+
+                <div class="card__bottom">
+                  <ul class="card__list">
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#user"></use>
+                      </svg>
+                      <span>Для 2 человек</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#outline"></use>
+                      </svg>
+                      <span>27 кв.м</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#view"></use>
+                      </svg>
+                      <span>Вид из окна</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#wifi"></use>
+                      </svg>
+                      <span>Wi fi</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#bed"></use>
+                      </svg>
+                      <span>Кровать king size</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#wine"></use>
+                      </svg>
+                      <span>Мини бар</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#deposit"></use>
+                      </svg>
+                      <span>Сейф</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <a class="card__link" href="#"></a>
+
+              <div class="card__img-box">
+                <img class="card__img" src="images/card/hotel-room-3.jpg" alt="" loading="lazy">
+                <div class="card__info-price">
+                  <h3 class="card__title">Вилла с собственным бассейном</h3>
+                  <span class="card__price">500$ за ночь</span>
+                </div>
+              </div>
+
+              <div class="card__content">
+                <p class="card__text">
+                  Изысканно оформленная вилла с деревянной мебелью, балконом с великолепным видом на Индийский океан, телевизором и ванной комнатой с
+                  ванной.
+                </p>
+
+                <div class="card__bottom">
+                  <ul class="card__list">
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#user"></use>
+                      </svg>
+                      <span>Для 2 человек</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#outline"></use>
+                      </svg>
+                      <span>35 кв.м</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#view"></use>
+                      </svg>
+                      <span>Вид из окна</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#wifi"></use>
+                      </svg>
+                      <span>Wi fi</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#bed"></use>
+                      </svg>
+                      <span>Кровать king size</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#wine"></use>
+                      </svg>
+                      <span>Мини бар</span>
+                    </li>
+
+                    <li class="card__item">
+                      <svg class="card__icon">
+                        <use xlink:href="images/sprite.svg#deposit"></use>
+                      </svg>
+                      <span>Сейф</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  Секция Rooms END -->
+
+      <!-- SPA -->
+      <section class="spa vs" id="spa">
+        <div class="container">
+          <h2 class="title spa__title">Спа центр</h2>
+          <div class="spa__inner">
+            <div class="spa__box">
+              <div class="spa__content">
+                <h3 class="spa__subtitle">Массаж</h3>
+                <p>Особая гордость Vacation by the sea - это широкий выбор спа программ.</p>
+                <p>
+                  Чудодейственная техника настоящих мастеров поможет вам расслабиться и отключиться от проблем, а использование аромамасел позволит
+                  получить максимальное удовольствие!
+                </p>
+              </div>
+              <div class="spa__img-box">
+                <img class="spa__img" src="images/spa-img.jpg" alt="Спа">
+              </div>
+            </div>
+
+            <div class="spa__box spa__box-wrap">
+              <div class="spa__img-box">
+                <img class="spa__img" src="images/spa-img-1.jpg" alt="Спа">
+              </div>
+              <div class="spa__content">
+                <h3 class="spa__subtitle">Бассейн</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint commodi ipsam odio odit quibusdam similique quasi, temporibus facilis
+                  eveniet iure minus! Quo quas perferendis unde laudantium praesentium. Ullam, distinctio error!
+                </p>
+              </div>
+            </div>
+
+            <div class="spa__box">
+              <div class="spa__content">
+                <h3 class="spa__subtitle">Сауна</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit possimus necessitatibus sint expedita, adipisci vel?</p>
+              </div>
+              <div class="spa__img-box">
+                <img class="spa__img" src="images/spa-img-2.jpg" alt="Спа">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SPA end -->
+
+      <!-- Фотогалерея -->
+      <section class="gallery vs" id="gallery">
+        <div class="container">
+          <h2 class="title gallery__title">Фотогалерея курорта</h2>
+          <div class="gallery__inner">
+            <a class="gallery__item" href="images/gallery/gallery-img-1.jpg">
+              <div class="gallery__item-icon">
+                <svg class="gallery-icon">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <img class="gallery__img" src="images/gallery/gallery-img-1.jpg" alt="Бунгало">
+            </a>
+            <a class="gallery__item" href="images/gallery/gallery-img-2.jpg">
+              <div class="gallery__item-icon">
+                <svg class="gallery-icon">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <img class="gallery__img" src="images/gallery/gallery-img-2.jpg" alt="Яхта в море">
+            </a>
+            <a class="gallery__item" href="images/gallery/gallery-img-3.jpg">
+              <div class="gallery__item-icon">
+                <svg class="gallery-icon">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <img class="gallery__img" src="images/gallery/gallery-img-3.jpg" alt="Пальмы">
+            </a>
+            <a class="gallery__item" href="images/gallery/gallery-img-4.jpg">
+              <div class="gallery__item-icon">
+                <svg class="gallery-icon">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <img class="gallery__img" src="images/gallery/gallery-img-4.jpg" alt="Пальмы">
+            </a>
+            <a class="gallery__item" href="images/gallery/gallery-img-5.jpg">
+              <div class="gallery__item-icon">
+                <svg class="gallery-icon">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <img class="gallery__img" src="images/gallery/gallery-img-5.jpg" alt="Ресторан отеля">
+            </a>
+            <a class="gallery__item" href="images/gallery/gallery-img-6.jpg">
+              <div class="gallery__item-icon">
+                <svg class="gallery-icon">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <img class="gallery__img" src="images/gallery/gallery-img-6.jpg" alt="Пальмы у бассейна">
+            </a>
+            <a class="gallery__item" href="images/gallery/gallery-img-7.jpg">
+              <div class="gallery__item-icon">
+                <svg class="gallery-icon">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <img class="gallery__img" src="images/gallery/gallery-img-7.jpg" alt="Пальмы">
+            </a>
+            <a class="gallery__item" href="images/gallery/gallery-img-8.jpg">
+              <div class="gallery__item-icon">
+                <svg class="gallery-icon">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <img class="gallery__img" src="images/gallery/gallery-img-8.jpg" alt="Пляж">
+            </a>
+            <a class="gallery__item" href="images/gallery/gallery-img-9.jpg">
+              <div class="gallery__item-icon">
+                <svg class="gallery-icon">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <img class="gallery__img" src="images/gallery/gallery-img-9.jpg" alt="Бассейн">
+            </a>
+
+            <a class="gallery__item" href="images/gallery/gallery-img-10.jpg">
+              <div class="gallery__item-icon">
+                <svg class="gallery-icon">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <img class="gallery__img" src="images/gallery/gallery-img-10.jpg" alt="Бассейн">
+            </a>
+
+            <a class="gallery__item" href="images/gallery/gallery-img-11.jpg">
+              <div class="gallery__item-icon">
+                <svg class="gallery-icon">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <img class="gallery__img" src="images/gallery/gallery-img-11.jpg" alt="Водный самолет у берега отеля">
+            </a>
+
+            <a class="gallery__item" href="images/gallery/gallery-img-12.jpg">
+              <div class="gallery__item-icon">
+                <svg class="gallery-icon">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <img class="gallery__img" src="images/gallery/gallery-img-12.jpg" alt="Бунгало в море">
+            </a>
+          </div>
+
+          <div class="gallery__btn">
+            <button class="btn show-more" type="button">Показать еще</button>
+          </div>
+        </div>
+      </section>
+      <!-- Фотогалерея end -->
+
+      <!-- Отзывы -->
+      <section class="reviews vs" id="reviews">
+        <div class="container">
+          <h2 class="title reviews__title">Отзывы</h2>
+
+          <div class="slider">
+            <div class="slider__item">
+              <div class="slider__wrapper">
+                <img class="slider__img" src="images/avatar.png" alt="Аватар">
+                <blockquote class="slider__text">
+                  Это прекрасная возможность не только отдыхать, но и заниматься спортом. Теннисный корт, столы для настольного тенниса, бадминтона,
+                  сквоша, площадки для волейбола и т.д. Если кто поделится контактами отеля с бадминтоном, будем рады. Повара готовят вкусно).
+                </blockquote>
+                <svg class="slider__icon">
+                  <use xlink:href="images/sprite.svg#double-quotes"></use>
+                </svg>
+                <span class="slider__name">Светлана П.</span>
+              </div>
+            </div>
+
+            <div class="slider__item">
+              <div class="slider__wrapper">
+                <img class="slider__img" src="images/avatar.png" alt="Аватар">
+                <blockquote class="slider__text">
+                  первый раз на мальдивах! всем рекомендую, лучший отель! очень хорошо! все красиво и все устроило, персонал прекрасный, девушка по
+                  имени Дарья на русском встречает на ресепшн и все поясняет и подсказывает. экскурсии рекомендую взять снорклинг на акулу, манту и
+                  черепах. обязательно берите с собой телефон или гоу про. наслаждение и воспоминания на всю жизнь !! ребята Мальдивы это супер!!!
+                </blockquote>
+                <svg class="slider__icon">
+                  <use xlink:href="images/sprite.svg#double-quotes"></use>
+                </svg>
+                <span class="slider__name">Инна</span>
+              </div>
+            </div>
+
+            <div class="slider__item">
+              <div class="slider__wrapper">
+                <img class="slider__img" src="images/avatar.png" alt="Аватар">
+                <blockquote class="slider__text">
+                  Большой очень ухоженный и зелёный остров, вкусная еда, вежливый персонал, уборка номера 2 раза в день, есть русскоязычные менеджеры,
+                  хороший домашний риф, много развлечений: анимация, йога, аэробика, вечерние программы, велосипеды, бесплатные бильярд, теннис
+                  большой и настольный, бадминтон, волейбол, настольные игры, хороший спорт зал. Все виды водных развлечений: каноэ, плоты,
+                  виндсёрфинг, скутеры, бананы, ласты и тд. Можно смело ехать надолго :))
+                </blockquote>
+                <svg class="slider__icon">
+                  <use xlink:href="images/sprite.svg#double-quotes"></use>
+                </svg>
+                <span class="slider__name">Иван</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Отзывы end -->
+      <!-- Контакты -->
+      <section class="contact vs" id="contact">
+        <div class="container">
+          <div class="contact__inner">
+            <div class="contact__left">
+              <div class="contact__item">
+                <svg class="contact-icon">
+                  <use xlink:href="images/sprite.svg#nav"></use>
+                </svg>
+                <span class="contact__adress">Адрес:</span>
+                <p class="contact__text">North Male Atoll, 20160 Атолл Северный Мале, Мальдивы</p>
+              </div>
+
+              <div class="contact__item">
+                <svg class="contact-icon">
+                  <use xlink:href="images/sprite.svg#phone"></use>
+                </svg>
+                <span class="contact__adress">Телефон:</span>
+                <a class="contact__text" href="tel:+197510008100"> +1 (975) 100 - 081 - 00</a>
+                <a class="contact__text" href="tel:+197510008107"> +1 (975) 100 - 081 - 07</a>
+              </div>
+
+              <div class="contact__item">
+                <svg class="contact-icon">
+                  <use xlink:href="images/sprite.svg#mail"></use>
+                </svg>
+                <span class="contact__adress">Почта:</span>
+                <a class="contact__text" href="mailto:info@vacationonthesea.com">info@vacationonthesea.com</a>
+              </div>
+            </div>
+
+            <div class="contact__right">
+              <h2 class="contact__title">Напишите нам</h2>
+              <p class="">Мы ответим на Ваше сообщение в течении дня.</p>
+
+              <form class="form" action="#" method="post">
+                <div class="form__fields">
+                  <div class="form__item">
+                    <input class="form__input" type="text" required>
+                    <label class="form__label">Ваше имя</label>
+                  </div>
+                  <div class="form__item">
+                    <input class="form__input" type="text" required>
+                    <label class="form__label">Ваша почта</label>
+                  </div>
+                  <div class="form__item-message">
+                    <textarea class="form__message" required></textarea>
+                    <label class="form__label-message">Ваше сообщение</label>
+                  </div>
+
+                  <div class="form__item">
+                    <button class="btn" type="submit">Отправить</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer vs">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__item">
+            <a class="logo footer__logo" href="#">
+              <picture>
+                <source srcset="images/logo-small.png" width="70" height="70" media="(max-width: 525px)">
+                <img class="logo__img" src="images/logo.png" width="300" height="80" alt="Логотип">
+              </picture>
+            </a>
+
+            <div class="social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Фейсбук">
+                    <svg class="social-icon">
+                      <use xlink:href="images/sprite.svg#fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Инстаграм">
+                    <svg class="social-icon">
+                      <use xlink:href="images/sprite.svg#insta"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Вконтакте">
+                    <svg class="social-icon">
+                      <use xlink:href="images/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__item">
+            <h3 class="footer__item-title">Информация</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__link" href="#about">О курорте</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#rooms">Номера</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">Ресторан</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h3 class="footer__item-title">Развлечения</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__link" href="#spa">СПА</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">Спортивный зал</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h3 class="footer__item-title">Медиа</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__link" href="#gallery">Фотогалерея</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">Видео</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__item footer__item-form">
+            <h3 class="footer__item-title">Рассылка новостей</h3>
+            <p class="footer__item-text">Подпишитесь на нашу рассылку, что бы быть в курсе последних новостей</p>
+
+            <form class="footer__form" action="#">
+              <input class="footer__form-input" type="email" placeholder="Введите ваш email " required>
+              <button class="btn footer__form-btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
