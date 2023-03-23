@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
    >
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body id="home">
@@ -72,13 +73,13 @@
       <section class="hero">
         <div class="container">
           <div class="hero__inner">
-            <div class="hero__content">
+            <div class="hero__content" data-aos="fade-in" data-aos-duration="1500">
               <h1 class="hero__title">Vacation by the sea <span>Отель и Курорт</span></h1>
               <p class="hero__text">Сделайте свою жизнь лучше и ярче! Вы должны отправиться в путешествие с нами!</p>
             </div>
 
             <!-- Booking -->
-            <div class="booking" id="booking">
+            <div class="booking" id="booking" data-aos="fade-up" data-aos-duration="1000">
               <div class="container">
                 <form class="form-book" action="#">
                   <div class="form-book__item">
@@ -138,10 +139,10 @@
         <div class="container">
           <h2 class="title about__title">О гостинице</h2>
           <div class="about__inner">
-            <div class="about__img-box">
+            <div class="about__img-box" data-aos="fade-right" data-aos-duration="1000">
               <img class="about__img" src="images/about-img.jpg" alt="Отель на Мальдивах">
             </div>
-            <div class="about__content">
+            <div class="about__content" data-aos="fade-left" data-aos-duration="1000">
               <p>
                 Отель <span class="about__name">Vacation by the sea</span> расположен на острове Тодду. К услугам гостей сад и бесплатный Wi-Fi. К
                 услугам гостей ресторан и доставка еды и напитков в номер. Сотрудники отеля могут организовать трансфер от/до аэропорта.
@@ -165,7 +166,8 @@
           <p class="rooms__text">Откройте для себя простор и удобства в наших современных и удобных номерах</p>
 
           <div class="rooms__inner">
-            <div class="card">
+
+            <div class="card" data-aos="fade-right" data-aos-duration="1500">
               <a class="card__link" href="#"></a>
               <div class="card__img-box">
                 <img class="card__img" src="images/card/hotel-room-1.jpg" alt="" loading="lazy">
@@ -234,7 +236,7 @@
               </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="fade-right" data-aos-duration="2500">
               <a class="card__link" href="#"></a>
               <div class="card__img-box">
                 <img class="card__img" src="images/card/hotel-room-2.jpg" alt="" loading="lazy">
@@ -305,7 +307,7 @@
               </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="fade-right" data-aos-duration="3000">
               <a class="card__link" href="#"></a>
 
               <div class="card__img-box">
@@ -386,7 +388,7 @@
         <div class="container">
           <h2 class="title spa__title">Спа центр</h2>
           <div class="spa__inner">
-            <div class="spa__box">
+            <div class="spa__box" data-aos="fade-right" data-aos-duration="1000">
               <div class="spa__content">
                 <h3 class="spa__subtitle">Массаж</h3>
                 <p>Особая гордость Vacation by the sea - это широкий выбор спа программ.</p>
@@ -400,7 +402,7 @@
               </div>
             </div>
 
-            <div class="spa__box spa__box-wrap">
+            <div class="spa__box spa__box-wrap" data-aos="fade-left" data-aos-duration="1000">
               <div class="spa__img-box">
                 <img class="spa__img" src="images/spa-img-1.jpg" alt="Спа">
               </div>
@@ -413,7 +415,7 @@
               </div>
             </div>
 
-            <div class="spa__box">
+            <div class="spa__box" data-aos="fade-right" data-aos-duration="1000">
               <div class="spa__content">
                 <h3 class="spa__subtitle">Сауна</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit possimus necessitatibus sint expedita, adipisci vel?</p>
@@ -431,7 +433,7 @@
       <section class="gallery vs" id="gallery">
         <div class="container">
           <h2 class="title gallery__title">Фотогалерея курорта</h2>
-          <div class="gallery__inner">
+          <div class="gallery__inner" data-aos="fade-up" data-aos-duration="3000">
             <a class="gallery__item" href="images/gallery/gallery-img-1.jpg">
               <div class="gallery__item-icon">
                 <svg class="gallery-icon">
@@ -545,7 +547,7 @@
         <div class="container">
           <h2 class="title reviews__title">Отзывы</h2>
 
-          <div class="slider">
+          <div class="slider" data-aos="fade-up" data-aos-duration="1000">
             <div class="slider__item">
               <div class="slider__wrapper">
                 <img class="slider__img" src="images/avatar.png" alt="Аватар">
@@ -616,7 +618,7 @@
                 <a class="contact__text" href="tel:+197510008107"> +1 (975) 100 - 081 - 07</a>
               </div>
 
-              <div class="contact__item">
+              <div class="contact__item" >
                 <svg class="contact-icon">
                   <use xlink:href="images/sprite.svg#mail"></use>
                 </svg>
@@ -745,6 +747,7 @@
       </div>
     </footer>
 
+    <script src="js/aos.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
