@@ -1,4 +1,24 @@
 $(function(){
+
+  // Aos
+AOS.init({
+  disable: 'phone',
+  offset: 100,
+  once: true,
+});
+
+// Плавный скролл
+
+$(document).ready(function(){
+	$(".menu").on("click","a", function (event) {
+		event.preventDefault(); //Убрать если нужна ссылка на другую страницу.
+		var id  = $(this).attr('href'),
+
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 1000);
+	});
+});
+
 // Slick slider
 $('.slider').slick({
   infinite: true,
