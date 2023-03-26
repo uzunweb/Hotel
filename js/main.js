@@ -1,3 +1,25 @@
+// Цвет меню при скроле
+const observer = new IntersectionObserver((entries) => {
+  console.log(entries);
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      document.querySelectorAll('.menu__link').forEach((link) => {
+        let id = link.getAttribute('href').replace('#', '');
+        if (id === entry.target.id) {
+          link.classList.add('menu__link--active');
+        } else {
+          link.classList.remove('menu__link--active');
+        }
+      });
+    }
+  });
+}, {
+  threshold: 0.5
+});
+
+document.querySelectorAll('.section').forEach(section => { observer.observe(section)} );
+
+
 $(function(){
 
   // Aos
@@ -5,18 +27,6 @@ AOS.init({
   disable: 'phone',
   offset: 100,
   once: true,
-});
-
-// Плавный скролл
-
-$(document).ready(function(){
-	$(".menu").on("click","a", function (event) {
-		event.preventDefault(); //Убрать если нужна ссылка на другую страницу.
-		var id  = $(this).attr('href'),
-
-			top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top}, 1000);
-	});
 });
 
 // Slick slider
